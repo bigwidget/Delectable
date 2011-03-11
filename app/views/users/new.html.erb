@@ -1,0 +1,8 @@
+<h1>Landing Page</h1>
+<p>Sign up</p>
+<%= semantic_form_for(@user, :html => {:method => :post}) do |f| %>
+	<%= f.inputs :email %>
+	<% f.buttons do %>
+		<%= f.commit_button 'Go' %>
+	<% end %>
+<% end %>
