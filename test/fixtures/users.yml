@@ -1,0 +1,27 @@
+# == Schema Information
+# Schema version: 20110311202351
+#
+# Table name: users
+#
+#  id                      :integer         not null, primary key
+#  fname                   :string(255)
+#  lname                   :string(255)
+#  wants_to_be_contributor :binary
+#  email                   :string(255)
+#  created_at              :datetime
+#  updated_at              :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fname: MyString
+  lname: MyString
+  wants_to_be_contributor: 
+  email: MyString
+
+two:
+  fname: MyString
+  lname: MyString
+  wants_to_be_contributor: 
+  email: MyString
