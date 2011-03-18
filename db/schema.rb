@@ -10,11 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110311202351) do
+ActiveRecord::Schema.define(:version => 20110318154059) do
 
   create_table "affiliations", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "memberships", :force => true do |t|
     t.integer  "user_id"
+    t.integer  "affiliation_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -22,7 +28,6 @@ ActiveRecord::Schema.define(:version => 20110311202351) do
   create_table "users", :force => true do |t|
     t.string   "fname"
     t.string   "lname"
-    t.binary   "wants_to_be_contributor"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
