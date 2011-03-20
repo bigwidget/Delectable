@@ -3,8 +3,9 @@
 	<p class="youremail">Your email</p>
 	<%= form_for(@user) do |f| %>
 		<%= f.text_field :email, :class => "email_input" %>
-		<div class="actions"><%= image_submit_tag("go.gif", :align => "right") %></div>
+		<div class="actions go_button"><%= image_submit_tag "go.gif" %></div>
 	<% end %>
+	<%= render 'shared/error_messages' %>
 </div>
 <div id="divider"></div>
 <div id="right">

@@ -27,6 +27,6 @@
 		</div>
 	</div>
 	<p id="copyright"> &copy; <%= DateTime.now.year %></p>
-  
+  <div id="debug"><%= debug(params) if Rails.env.development? %></div>
 </body>
 </html>

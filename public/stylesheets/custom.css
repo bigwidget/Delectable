@@ -41,7 +41,7 @@ p.youremail {
 
 .email_input {
 	font-size: 120%;
-	width: 100%;
+	width: 97.2%;
 	margin-bottom: 15px;
 }
 
@@ -144,4 +144,19 @@ p.youremail {
 	margin-right: 20px;
 	font-size: 80%;
 	color: white;
+}
+
+#debug {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 20px;
+	font-size: 80%;
+	color: white;
+}
+
+#error_explanation {
+	color: #f57c0e;
+	font-size: 80%;
+	font-weight: bold;
 }
