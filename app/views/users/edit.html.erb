@@ -1,9 +1,8 @@
-<h1>Tell us about yourself</h1>
+<h1 class="page_title">Tell us about yourself</h1>
 <%= semantic_form_for(@user, :html => {:method => :put}) do |f| %>
 	<%= f.inputs do %>
-		<%= f.input :fname, :label => "First Name" %>
-		<%= f.input :lname, :label => "Last Name" %>
-		<%= f.input :affiliations, :as => :check_boxes %>
+		<%= f.input :fname, :label => "Name" %>
+		<%= f.input :affiliations, :label => "Libertarian Affiliations", :as => :check_boxes %>
 	<% end %>
 	<% f.buttons do %>
 		<%= f.commit_button 'Go' %>

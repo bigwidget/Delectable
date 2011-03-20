@@ -1,8 +1,14 @@
-<h1>Landing Page</h1>
-<p>Sign up</p>
-<%= semantic_form_for(@user, :html => {:method => :post}) do |f| %>
-	<%= f.inputs :email %>
-	<% f.buttons do %>
-		<%= f.commit_button 'Go' %>
+<div id="left">
+	<h1 class="signup">Sign up</h1>
+	<p class="youremail">Your email</p>
+	<%= form_for(@user) do |f| %>
+		<%= f.text_field :email, :class => "email_input" %>
+		<div class="actions"><%= image_submit_tag("go.gif", :align => "right") %></div>
 	<% end %>
-<% end %>
+</div>
+<div id="divider"></div>
+<div id="right">
+  <h2 id="coming_soon">COMING SOON!</h2>
+	<p>	Browse and discuss the most interesting daily content as determined by fellow libertarian readers.</p>
+	<p>The sign up list grows daily and includes people from CATO, Reason Magazine and the Institute for Humane Studies.</p>
+</div>
