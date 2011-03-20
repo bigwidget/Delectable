@@ -15,6 +15,7 @@ html, body {
 
 body {
 	background: no-repeat #222933;
+	overflow: hidden;
 }
 
 h1.signup {
