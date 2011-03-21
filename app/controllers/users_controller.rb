@@ -5,19 +5,15 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    if @user.save
-      redirect_to edit_user_path(@user)
-    else
-      render 'new'
+    respond_to do |format|
+      if @user.save
+        format.html{ render :action => :edit } 
+      else
+        format.html{ render :action => :new }
+      end
     end
   end
-  
-  def edit
-    @user = User.find(params[:id])
-    @first_visit = @user.first_visit
-    @user.update_attribute(:first_visit, false) if @first_visit
-  end
-  
+
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
