@@ -14,6 +14,8 @@ class UsersController < ApplicationController
   
   def edit
     @user = User.find(params[:id])
+    @first_visit = @user.first_visit
+    @user.update_attribute(:first_visit, false) if @first_visit
   end
   
   def update

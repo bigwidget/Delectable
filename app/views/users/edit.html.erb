@@ -1,3 +1,4 @@
+<% if @first_visit %>
 <h1 class="page_title">Tell us about yourself</h1>
 <%= semantic_form_for(@user, :html => {:method => :put}) do |f| %>
 	<%= f.inputs do %>
@@ -7,4 +8,8 @@
 	<% f.buttons do %>
 		<%= f.commit_button 'Submit' %>
 	<% end %>
+<% end %>
+<% else %>
+<h1 class="page_title">Error</h1>
+<p>This user's information has already been submitted.</p>
 <% end %>
