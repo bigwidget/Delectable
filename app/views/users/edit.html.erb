@@ -2,8 +2,8 @@
 <%= semantic_form_for(@user, :html => {:method => :put}) do |f| %>
 	<%= f.inputs do %>
 		<%= f.input :fname, :label => "Name" %>
-		<%= f.input :affiliations, :label => "Libertarian Affiliations", :as => :check_boxes %>
-		<%= f.input :about, :label => "Other Affiliations, or anything else we should know",
+		<%= f.input :affiliations, :label => "Affiliations", :as => :check_boxes %>
+		<%= f.input :about, :label => "Anything else we should know?",
 												:input_html => { :rows => 3} %>
 	<% end %>
 	<% f.buttons do %>
