@@ -81,7 +81,7 @@ p.youremail {
 
 #blue_box {
 	position: relative; /* so that divider has appropriate height */
-	width: 88%;
+	width: 80%;
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
@@ -96,7 +96,7 @@ p.youremail {
 #links {
   float: right;
 	margin-top: 2%;
-	margin-right: 6.5%;
+	margin-right: 14%;
 	text-align: center;
 	padding-top: 1%;
 	padding-bottom: 1%;
