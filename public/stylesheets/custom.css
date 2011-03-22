@@ -68,7 +68,8 @@ p.youremail {
 }
 
 #container {
-  position: absolute;
+  text-align: left;
+	position: absolute;
 	left: 34%;
 	top: 10%;
   width: 50%;
