@@ -68,7 +68,7 @@ p.youremail {
 }
 
 #container {
-  position: relative;
+  position: absolute;
 	left: 34%;
 	top: 10%;
   width: 50%;
