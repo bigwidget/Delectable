@@ -19,7 +19,6 @@ class UsersController < ApplicationController
     if @user.update_attributes(params[:user])
       redirect_to about_path
     else
-      @user = User.find(params[:id])
       render 'edit'
     end
   end
