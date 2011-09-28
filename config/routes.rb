@@ -2,11 +2,12 @@ HiveLandingPage::Application.routes.draw do
   
   resources :users
   
-  match '/about-you', :to => 'users#edit'
   match '/about', :to => 'pages#about'
   match '/contact', :to => 'pages#contact'
+  match '/survey', :to => 'pages#survey'
+  match '/about-you', :to => 'users#edit'
   
-  root :to => 'users#new'
+  root :to => 'pages#home'
 
 
   # The priority is based upon order of creation:
